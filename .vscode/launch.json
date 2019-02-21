@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestProgression",
+            "request": "launch",
+            "mainClass": "TestProgression"
+        }
+    ]
+}
