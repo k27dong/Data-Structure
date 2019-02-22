@@ -1,19 +1,11 @@
-import java.util.*;
-
-/*
-- this() can be used in constructor to initialize variable without reference
-their names but only the number of input
-- this is the parent class,  waiting to be inherited
-
-*/
-public class Progression {
+public abstract class AbstractProgression {
     protected long current;
 
-    public Progression() {  // constructor
+    public AbstractProgression() {  // constructor
         this(0);    // same as Progression(0), set the default current to 0
     }
 
-    public Progression(long start) {
+    public AbstractProgression(long start) {
         current = start;
     }
 
@@ -23,9 +15,10 @@ public class Progression {
         return answer;
     }
 
-    protected void advance() {
-        current++;
-    }
+    // only signature here, to use this, subclasses must provide the 
+    // code. It is initiated as abstract because it is designed to be
+    // overriden
+    protected abstract void advance();  
 
     public void printProgression(int n) {
         System.out.print(nextValue());
