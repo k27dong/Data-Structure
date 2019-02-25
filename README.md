@@ -1,4 +1,4 @@
-# Data-Structure-Notes
-Data Structures &amp; Algorithms in Java
+## Data-Structure-Notes
+Data Structures &amp; Algorithms
 
 
