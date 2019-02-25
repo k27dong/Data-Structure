@@ -20,9 +20,7 @@ public class SinglyLinkedList<E> {
             next = n;
         }
     }
-
-
-
+    
     private Node<E> head = null;
     private Node<E> tail = null;
     private int size = 0;
@@ -90,7 +88,7 @@ public class SinglyLinkedList<E> {
         size--;
     }
 
-    public void removeLast() {
+    public void removeLast() {  /* FIX ME */
         if (isEmpty()) {
 
         }
@@ -119,7 +117,6 @@ public class SinglyLinkedList<E> {
             System.out.println(ref.get_element());
         }
         System.out.println(ref.get_next().get_element() + " (tail)");
-        
     }
 
     public static void main(String[] args) {
@@ -131,12 +128,8 @@ public class SinglyLinkedList<E> {
         a.addFirst(0);
 
         a.removeFirst();
+        a.removeFirst();
 
         a.print_array();
-        
-        
-        
-        
     }
-    
 }
