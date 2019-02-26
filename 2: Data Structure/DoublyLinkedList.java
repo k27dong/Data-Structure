@@ -10,12 +10,6 @@ public class DoublyLinkedList<E> {
             element = e;
         }
 
-        public Node(E e, Node<E> p, Node<E> n) {
-            prev = p;
-            next = n;
-            element = e;
-        }
-
         public void set_prev(Node<E> n) {
             prev = n;
         }
