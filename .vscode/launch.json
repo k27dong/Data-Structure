@@ -2,6 +2,36 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - P2_35",
+            "request": "launch",
+            "mainClass": "P2_35"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P2_34",
+            "request": "launch",
+            "mainClass": "P2_34"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P2_32",
+            "request": "launch",
+            "mainClass": "P2_32"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P2_31",
+            "request": "launch",
+            "mainClass": "P2_31"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P2_30",
+            "request": "launch",
+            "mainClass": "P2_30"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DoublyLinkedList",
             "request": "launch",
             "mainClass": "DoublyLinkedList"
