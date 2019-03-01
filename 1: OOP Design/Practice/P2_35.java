@@ -9,7 +9,7 @@ public class P2_35 {
             c = s.charAt(i);
             temp += c;
         }
-        return temp;
+        return temp;  
     }
 
     public static void main(String[] args) {
