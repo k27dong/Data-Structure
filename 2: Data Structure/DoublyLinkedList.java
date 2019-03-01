@@ -123,9 +123,4 @@ public class DoublyLinkedList<E> {
 
         a.print_array();
     }
-
-
-
-    
-    
 }
