@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - factorial",
+            "request": "launch",
+            "mainClass": "factorial"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - english_ruler",
+            "request": "launch",
+            "mainClass": "english_ruler"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - P3_39",
             "request": "launch",
             "mainClass": "P3_39"

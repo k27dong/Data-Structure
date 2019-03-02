@@ -32,6 +32,7 @@ public class disjoint_and_uniqueness {
     }
 
     public static boolean unique_1(int[] A) {
+        // O(n^2)
         for (int  i = 0; i < A.length; i++) {
             for (int j = i + 1; j < A.length; j++) {
                 if (A[i] == A[j]) {
@@ -43,6 +44,8 @@ public class disjoint_and_uniqueness {
     }
 
     public static boolean unique_2(int[] A) {
+        // Sort function: O(n * log(n))
+        // For loop: O(n)
         Arrays.sort(A);
         for (int i = 0; i < A.length - 1; i++) {
             if (A[i] == A[i+1]) {
