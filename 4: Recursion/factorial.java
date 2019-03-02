@@ -1,7 +1,7 @@
 public class factorial {
     public static int calculate_factorial (int n) throws IllegalArgumentException {
         if (n < 0) {
-            throw new IllegalAccessException();
+            throw new IllegalArgumentException();
         }
         else {
             if (n == 0) {
