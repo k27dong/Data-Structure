@@ -27,6 +27,5 @@ public class string_repeat {
          * running time is O(n)
          */
     }
-
-    
 }
+
