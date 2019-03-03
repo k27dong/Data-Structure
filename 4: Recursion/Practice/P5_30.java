@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class C5_16 {
+public class P5_30 {
     /**
      * pseudocode
      * - target pole: where the disks are moved to
