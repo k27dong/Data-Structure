@@ -1,10 +1,10 @@
 public class factorial {
-    public static int calculate_factorial (int n){
+    public static int fac(int n){
         if (n == 0) {
             return 1;
         }
         else {
-            return n * calculate_factorial(n - 1);
+            return n * fac(n - 1);
         }
     }
 }
