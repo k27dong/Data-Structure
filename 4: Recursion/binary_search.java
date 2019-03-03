@@ -16,17 +16,4 @@ public class binary_search {
             }
         }
     }
-
-    public static int binary_sum(int[] data, int low, int high) {
-        if (low > high) {
-            return 0;
-        }
-        else if (low == high) {
-            return data[low];
-        }
-        else {  // low < high
-            int mid = (low + high) / 2;
-            return binary_sum(data, low, mid) + binary_sum(data, mid, high);
-        }
-    }
 }

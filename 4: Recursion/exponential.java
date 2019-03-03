@@ -9,7 +9,7 @@ public class exponential {
             return 1;
         }
         else {
-            return n * power_1(n, e - 1)
+            return n * power_1(n, e - 1);
         }
     }
     public static double power_2(double n, int e) {
@@ -20,7 +20,7 @@ public class exponential {
             return 1;
         }
         else {
-            double partial = power(n, e / 2);
+            double partial = power_2(n, e / 2);
             double result = partial * partial;
             if (e % 2 == 1) {
                 result *= n;
@@ -32,9 +32,9 @@ public class exponential {
     /**
      * exponent = 
      * even + even -> n * n
-     * even + odd  -> n * n *n
+     * even + odd -> n * n *n
      */
     public static void main(String[] args) {
-        System.out.println(power(2, 1));
+        System.out.println(power_2(2, 1));
     }
 }
