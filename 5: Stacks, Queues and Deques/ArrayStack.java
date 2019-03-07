@@ -1,4 +1,6 @@
-public class ArrayStack<E> implements Stack<E> {
+
+
+public class ArrayStack<E> implements Stack<E>{
     public static final int CAPACITY = 1000;
     private E[] data;
     private int t = -1;
@@ -41,8 +43,5 @@ public class ArrayStack<E> implements Stack<E> {
         data[t] = null;
         t--;
         return answer;
-    }
-    public static void main(String[] args) {
-        ArrayStack<Integer> a = new ArrayStack<>();
     }
 }
