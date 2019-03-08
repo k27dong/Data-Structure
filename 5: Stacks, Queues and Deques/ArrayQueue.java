@@ -1,5 +1,5 @@
 public class ArrayQueue<E> implements Queue<E> {
-    // this is an array-based implementation of Queue
+    // this is an array-based implementation of Queue, using module method
 
     // instance variables
     private E[] data;
@@ -33,6 +33,9 @@ public class ArrayQueue<E> implements Queue<E> {
         if (sz == data.length) {
             throw new IllegalStateException("Queue is full");
         }
+        // the module method
+        // (current position + number of element) could be longer than the length of the array
+        // use module to find the right pisition
         int avail = (f + sz) % data.length;
         data[avail] = e;
         sz++;
