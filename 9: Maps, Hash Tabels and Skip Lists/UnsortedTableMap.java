@@ -1,10 +1,14 @@
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Map.Entry;
 
 public class UnsortedTableMap<K, V> extends AbstractMap<K, V> {
+    // a map class that contains unsorted entries, controlled by an arraylist
     private ArrayList<MapEntry<K, V>> table = new ArrayList<>();
 
     public UnsortedTableMap() {
-        
+        // do nothing
     }
 
     private int findIndex(K key) {
@@ -15,7 +19,7 @@ public class UnsortedTableMap<K, V> extends AbstractMap<K, V> {
                 return i;
             }
         }
-
+        // if no index is found
         return -1;
     }
 
@@ -55,6 +59,36 @@ public class UnsortedTableMap<K, V> extends AbstractMap<K, V> {
         }
         table.remove(n - 1);
         return answer;
+    }
+
+
+    private class EntryIterator implements Iterator<Entry<K, V>> {
+        private int j = 0;
+
+        public boolean hasNext() {
+            return j < table.size();
+        }
+
+        public Entry<K, V> next() {
+            if (j == table.size()) {
+                throw new NoSuchElementException();
+            }
+            return table.get(j++);
+        }
+
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+    private class EntryIterable implements Iterable<Entry<K, V>> {
+        public Iterator<Entry<K, V>> iterator() {
+            return new EntryIterator();
+        }
+    }
+
+    public Iterable<Entry<K, V>> entrySet() {
+        return new EntryIterable();
     }
 
 }
