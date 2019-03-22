@@ -4,4 +4,5 @@
 ```java
 Float.floatToIntBits(x);
 ```
-- for any data type X that is larger than an int, 
+- for any data type X that is larger than an int, only half of the hash would be created, meaning it will be more likely that a collision occurs
+- 
