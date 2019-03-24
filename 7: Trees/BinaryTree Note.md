@@ -1,5 +1,9 @@
 # Binary Tree Note:
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...">
+</script>
+
 Let T be a non empty binary tree:
 - <code>$n$</code> : total number of nodes
 - <code>$h$</code> : height
