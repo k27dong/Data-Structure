@@ -59,8 +59,6 @@ public abstract class AbstractHashMap<K, V> extends AbstractMap<K, V> {
             put(e.getKey(), e.getValue());
         }
     }
-
-
     /**
      * createTable: create an initially empty table, having size equal to a designated capacity instance variable
      * bucketGet: mimic the semantics of the public get method
