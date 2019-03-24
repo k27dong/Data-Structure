@@ -1,3 +1,3 @@
-## Data-Structure-Notes
+## Data Structure and Algorithm
 
-notes & practices
+All codes commented.
