@@ -19,6 +19,5 @@ public interface Tree<E> extends Iterable {
     Iterable<Position<E>> children(Position<E> p) throws IllegalArgumentException;
 
     Iterator<E> iterator();
-    Iterable<Position<E>> position();
-    
+    Iterable<Position<E>> position();    
 }
