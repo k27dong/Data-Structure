@@ -1,3 +1,3 @@
-## Data Structure and Algorithm
+## Data Structures and Algorithms
 
-All codes commented.
+Java
